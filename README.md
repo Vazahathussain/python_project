@@ -27,3 +27,43 @@ plt.show()
 - Data Engineers require more specialized technical skills (AWS, Azure, Spark) compared to Data Analysts and Data Scientists who are expected to be proficient in more general data management and analysis tools (Excel, Tableau).
 - Python is a versatile skill, highly demanded across all three roles, but most prominently for Data Scientists (72%) and Data Engineers (65%).
 
+## 2. How are in-demand skills trending for Data Analysts?
+
+### Visualise Data
+
+```from matplotlib.ticker import PercentFormatter
+
+df_plot = df_DA_IND_percent.iloc[:, :5]
+sns.lineplot(data=df_plot, dashes=False, legend='full', palette='tab10')
+sns.set_theme(style='ticks')
+sns.despine() # remove top and right spines
+
+plt.title('Trending Top Skills for Data Analysts in the US')
+plt.ylabel('Likelihood in Job Posting')
+plt.xlabel('2023')
+plt.legend().remove()
+plt.gca().yaxis.set_major_formatter(PercentFormatter(decimals=0))
+
+# annotate the plot with the top 5 skills using plt.text()
+for i in range(5):
+    plt.text(11.2, df_plot.iloc[-1, i], df_plot.columns[i], color='black')
+
+plt.show()
+```
+### Results
+
+![Trending top skills for Data Analysts in India](images\skill_trend_DA_IND.png)
+
+*Bar graph visualising the trending top skills for Data Analyst in India*
+
+### Insights
+- SQL remains the most consistently demanded skill throughout the year, although it shows a gradual decrease in demand.
+- Excel experienced a significant increase in demand starting around September, surpassing both Python and Tableau by the end of the year.
+- Both Python and Tableau show relatively stable demand throughout the year with some fluctuations but remain essential skills for data analysts. Power BI, while less demanded compared to the others, shows a slight upward trend towards the year's end.
+
+
+
+
+
+
+
