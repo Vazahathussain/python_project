@@ -19,7 +19,7 @@ plt.show()
 ```
 ### Results
 
-![Visualisation of Top Skills for Data Nerds](images\skill_demand_all_data_roles.png)
+![Visualisation of Top Skills for Data Nerds](skill_demand_all_data_roles.png)
 
 ### Insights
 
@@ -52,7 +52,7 @@ plt.show()
 ```
 ### Results
 
-![Trending top skills for Data Analysts in India](images\skill_trend_DA_IND.png)
+![Trending top skills for Data Analysts in India](skill_trend_DA.png)
 
 *Bar graph visualising the trending top skills for Data Analyst in India*
 
